@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    color: #8e7c74;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    text-shadow: -4px -1px 8px rgba(135, 111, 96, 0.72);
+}
+
+
+h2 {
+    font-weight: 400;
+    text-shadow: -4px -1px 8px rgba(135, 111, 96, 0.72);
+    margin: 20px
+}
+
+p {
+    line-height: 2;
+    
+}
+
+/* HEADER */
+
+header {
+    background-color: #F0EBE3;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* PRESENTACION */
+
+.Presentacion {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.Presentacion h2 {
+    grid-area: h2;
+    font-family: "Great Vibes", cursive;
+    font-weight: 100;
+    font-size: 6em;
+}
+
+.Presentacion p {
+    font-size: 3.4em;
+    margin-bottom: 30px;
+}
+
+/* FOTO ANILLO */
+
+.Anilloimg {
+    background-color: #F0EBE3;
+    padding-top: 20px;
+}
+
+.Anilloimg .p-final {
+    font-size: 2em;
+    padding: 10px;
+}
+
+.Anilloimg img{
+    width: 60%;
+    max-width: 200px;
+    box-shadow: -6px 6px 11px -2px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: -6px 6px 11px -2px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -6px 6px 11px -2px rgba(0, 0, 0, 0.62);
+}
+
+/* CIVIL */
+
+.Civil {
+    padding-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.Civil img {
+    width: 100px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.Civil a {
+    text-decoration: none;
+}
+
+.Civil .ubicacion-civil{
+    padding-top: 20px;
+}
+
+.Civil .ubicacion-btn {
+    padding-top: 25px;
+    display: inline-block;
+    background-color: #998575;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.ubicacion-btn:hover {
+    background-color: #d1c9bf;
+}
+
+/* FIESTA */
+
+.Fiesta {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #F0EBE3;
+    font-size: 1.5rem;
+}
+
+.Fiesta img {
+    width: 80px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+
+.Fiesta .ubicacion-fiesta{
+    padding-top: 20px;
+}
+
+.Fiesta .ubicacion-btn {
+    padding-top: 25px;
+    display: inline-block;
+    background-color: #998575;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.ubicacion-btn:hover {
+    background-color: #d1c9bf;
+}
+
+/* NOSOTROS */
+
+.Nosotros {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+
+.Nosotros img.inicial {
+    width: 100px;
+}
+
+.Nosotros h2 {
+    font-size: 2em;
+}
+
+
+.gridimg{
+    display: grid;
+    grid-template-areas:
+        "i1 i2 i4"
+        "i1 i3 i4"
+        "i5 i6 i8"
+        "i5 i7 i8";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    width: 80%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: auto; 
+    padding: 10px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.Nosotros img{ 
+    width: 100%;
+    height: auto;
+    transition: transform 0.9s ease, z-index 0.9s ease; 
+
+}
+.Nosotros .grid-1 {
+    grid-area: i1;
+}
+
+.Nosotros .grid-2 {
+    grid-area: i2;
+}
+
+.Nosotros .grid-3 {
+    grid-area: i3;
+}
+
+.Nosotros .grid-4 {
+    grid-area: i4;
+}
+
+.Nosotros .grid-5 {
+    grid-area: i5;
+}
+
+.Nosotros .grid-6 {
+    grid-area: i6;
+}
+
+.Nosotros .grid-7 {
+    grid-area: i7;
+}
+
+.Nosotros .grid-8 {
+    grid-area: i8;
+}
+
+
+
+.Nosotros .grid-1,
+.Nosotros .grid-2,
+.Nosotros .grid-3,
+.Nosotros .grid-4,
+.Nosotros .grid-5,
+.Nosotros .grid-6,
+.Nosotros .grid-7,
+.Nosotros .grid-8 {
+    width: 100%;
+    height: auto;
+}
+
+.Nosotros .zoom:hover {
+    transform: scale(1.7);
+    z-index: 1; /* Lleva la imagen al frente */
+    position: relative; 
+}
+
+.Nosotros .grid-1:hover {
+    transform: scale(1.7) translate(30%, 0);
+}
+
+.Nosotros .grid-2:hover {
+    transform: scale(1.7) translate(30%, 0);
+}
+
+.Nosotros .grid-3:hover {
+    transform: scale(1.7) translate(30%, 0);
+}
+
+.Nosotros .grid-4:hover {
+    transform: scale(1.7) translate(-30%, 0);
+}
+
+.Nosotros .grid-5:hover {
+    transform: scale(1.7) translate(30%, 0);
+}
+
+.Nosotros .grid-6:hover {
+    transform: scale(1.7) translate(30%, 0);
+}
+
+.Nosotros .grid-7:hover {
+    transform: scale(1.7) translate(30%, 0);
+}
+
+.Nosotros .grid-8:hover {
+    transform: scale(1.7) translate(-30%, 0);
+}
+
+/* REGALOS */
+
+.Regalos {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #F0EBE3;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Regalos img {
+    width: 80px;
+}
+
+.Regalos p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+.Regalos strong{
+    font-weight: 500;
+}
+
+/* ASISTENCIA */
+
+.Asistencia {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.Asistencia img {
+    width: 80px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border-radius: initial;
+
+}
+
+.Asistencia .mensajes {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding-top: 20px;
+}
+.Asistencia .Delfi{
+    padding-top: 25px;
+    display: inline-block;
+    background-color: #998575;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.Delfi:hover {
+    background-color: #d1c9bf;
+}
+
+.Asistencia .Gaston{
+    padding-top: 25px;
+    display: inline-block;
+    background-color: #998575;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.Gaston:hover {
+    background-color: #d1c9bf;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #F0EBE3;
+    padding-bottom: 20px;
+    
+}
+
+footer p{
+    font-size: 2rem;
+    padding: 5px;
+
+} 
+footer h3{
+    font-family: "Great Vibes", cursive;
+    font-weight: 100;
+    font-size: 3rem;
+    color: #998575;
+    text-shadow: -4px -1px 8px rgba(135, 111, 96, 0.72);
+}
+
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+
+h1{
+    font-size: 2.5rem;
+}
+p{
+    line-height: 1.5;
+}
+
+/* PRESENTACION */
+
+.Presentacion{
+    padding-top: 10px;
+}
+
+.Presentacion h2{
+    font-size: 4rem;
+}
+.Presentacion p{
+    font-size: 2rem;
+}
+
+/* FOTO ANILLO */
+
+.Anilloimg .p-final{
+    font-size: 1.18rem;
+}
+
+/* CIVIL */
+
+.Civil{
+    font-size: 1.2rem;
+}
+.Civil img{
+    width: 75px;
+}
+
+.Civil .ubicacion-btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+}
+
+/* FIESTA */
+
+.Fiesta{
+    font-size: 1.2rem;
+}
+
+.Fiesta img{
+    width: 70px;
+}
+
+.Fiesta .ubicacion-btn{
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+
+/* Nosotros */
+
+
+.Nosotros img.inicial{
+    width: 70px;
+}
+
+.Nosotros h2{
+    font-size: 1.8rem;
+}
+
+.gridimg{
+    width: 95%;
+    box-sizing: border-box;
+    grid-template-areas: 
+    "i1 i2"
+    "i1 i3"
+    "i6 i8"
+    "i7 i8"
+    "i4 i5";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap:3px;
+    padding: 0;
+    margin:0 auto;
+}
+
+.Nosotros .grid-2:hover {
+    transform: scale(1.7) translate(-30%, 0);
+}
+
+.Nosotros .grid-3:hover {
+    transform: scale(1.7) translate(-30%, 0);
+}
+
+.Nosotros .grid-4:hover {
+    transform: scale(1.7) translate(30%, 0);
+}
+
+.Nosotros .grid-5:hover {
+    transform: scale(1.7) translate(-30%, 0);
+}
+
+/* REGALOS */
+
+.Regalos {
+    font-size: 1.2rem;
+}
+
+.Regalos img{
+    width: 65px;
+}
+
+.Regalos p{
+    width: 90%;
+
+}
+
+/* ASISTENCIA */
+
+.Asistencia {
+    font-size: 1.2rem;
+}
+.Asistencia img{
+    width: 65px;
+}
+
+.Asistencia .Gaston{
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+.Asistencia .Delfi{
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+
+
+/*FOOTER*/
+footer{
+    padding:5px;
+}
+
+footer p{
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+footer h3{
+    font-size: 2rem;
+}
+
+/*TABLET*/
+
+@media only screen and (min-width: 501px) and (max-width: 960px){
+
+h1{
+    font-size: 2.7rem;
+}
+p{
+    line-height: 1.5;
+}
+
+/* PRESENTACION */
+
+.Presentacion{
+    padding-top: 10px;
+}
+
+.Presentacion h2{
+    font-size: 4.5rem;
+}
+.Presentacion p{
+    font-size: 2.5rem;
+}
+
+/* FOTO ANILLO */
+
+.Anilloimg .p-final{
+    font-size: 1.8rem;
+}
+
+/* CIVIL */
+
+.Civil{
+    font-size: 1.5rem;
+}
+.Civil img{
+    width: 80px;
+}
+
+.Civil .ubicacion-btn {
+    padding: 15px 20px;
+    font-size: 1rem;
+}
+}
+
+/* FIESTA */
+
+.Fiesta{
+    font-size: 1.5rem;
+}
+
+.Fiesta img{
+    width: 75px;
+}
+
+.Fiesta .ubicacion-btn{
+    padding: 15px 20px;
+    font-size: 1rem;
+}
+
+/* Nosotros */
+
+
+.Nosotros img.inicial{
+    width: 75px;
+}
+
+.Nosotros h2{
+    font-size: 2rem;
+}
+
+.gridimg{
+    width:80%;
+}
+/* REGALOS */
+
+.Regalos {
+    font-size: 1.5rem;
+}
+
+.Regalos img{
+    width: 70px;
+}
+
+.Regalos p{
+    font-size: 1.2rem;
+    width: 90%;
+
+}
+
+/* ASISTENCIA */
+
+.Asistencia {
+    font-size: 1.4rem;
+}
+.Asistencia img{
+    width: 70px;
+}
+
+.Asistencia .Gaston{
+    padding: 15px 20px;
+    font-size: 1rem;
+}
+.Asistencia .Delfi{
+    padding: 15px 20px;
+    font-size: 1rem;
+}
+
+
+/*FOOTER*/
+footer{
+    padding:5px;
+}
+
+footer p{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+footer h3{
+    font-size: 2.5rem;
+}
